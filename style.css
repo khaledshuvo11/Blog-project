@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(image/1337139.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.logo {
+    float: left;
+    width: 580px;
+}
+.logo img{
+    float: left;
+    margin-right: 16px;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+.icon {
+    color: white;
+}
+.icon a {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+.container a {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+}
+.container a:hover {
+    background-image: linear-gradient(to bottom, rgb(255, 128, 0), rgb(255, 238, 0));
+    color: black;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+    
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+}
+.clear {
+    overflow: hidden;
+}
+.background {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 30px;
+}
+ul li a:hover, #active{
+    background: yellow;
+    background: linear-gradient(rgb(255, 166, 0), rgb(255, 247, 0));
+    color:#333;
+}
+.samepost {
+    margin-bottom: 40px;
+}
+.postsection {
+    width: 65%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+.sidebar {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+.popular img {
+    width: 90px;
+    height: 55px;
+    margin-top: 25px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding: 4px;
+}
+span.pagination {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+span.pagination a {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 3px;
+    margin-left: 2px;
+    padding: 2px 12px 8px 10px;
+}
+span.pagination a:hover {
+    color: rgba(255, 255, 255, 0.818);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.172), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.357);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.504);
+}
+.footersection {
+    height: 90px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+input[type="text"], input[type="email"] {
+    border: 1px solid #808080;
+    border-radius: 3px;
+    margin: 8px 0px 5px 5px;
+    padding: 5px;
+    width: 235px;
+}
+input[type="submit"] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    border: 1px solid gray;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 5px;
+    padding: 1px 6px;
+}
+input[type="submit"]:hover{background:#FEF4E5;color:#000;}
+textarea {
+    height: 110px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
+    width: 302px;
+    border: 1px solid #808080;
+}
+.relatedpost img {
+    height: 130px;
+    width: 225px;
+    margin: 10px 5px;
+    float: left;
+}
+.relatedpost img:hover {
+    opacity: 0.8;
+}
+.post img {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+    padding: 8px;
+}
+.notfound p span {
+    font-size: 200px;
+    color: white;
+    display: block;
+
+}
+@media screen and (max-width: 600px){
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .fonts {
+        display: flex;
+        justify-content: center;
+    }
+    .searchbar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .sidebar {
+        display: none;
+    }
+    .postsection {
+        width: 90%;
+        height: 70%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .readmore {
+        margin-top: 16px;
+    }
+}
+
+
+/* Admin Panel Style Start */
